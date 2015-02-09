@@ -37,7 +37,11 @@ describe('piggify', function() {
   });
 
   it('works for sentences not just words', function() {
-    expect(piggify("How are you")).to.equal("owhay reay ouya");
+    expect(piggify("How are you")).to.equal("owhay areay ouyay");
+  });
+
+  it('works for sentences not just with punctuation', function() {
+    expect(piggify("How are you??")).to.equal("owhay areay ouyay??");
   });
 
 });
