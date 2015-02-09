@@ -1,9 +1,8 @@
 var isVowel = function(letter) {
-  var vowels = ["a", "e", "i", "o", "u", "y"];
-  if (vowels.indexOf(letter) === -1) {
-    return false;
-  } else {
+  if (/[aeiouy]/.test(letter)) {
     return true;
+  } else {
+    return false;
   }
 };
 
